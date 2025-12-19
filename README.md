@@ -11,7 +11,7 @@ A **production-ready Telegram File Sharing Bot** with batch-based sharing, Mongo
 ---
 
 ## ✅ Updated And Tested
-This bot was made for personal use and I also made it public so other fellow developers can gain benefit from this .
+This bot was made for personal use but I made it public so other fellow developers can gain benefit from this .
 
 ---
 
