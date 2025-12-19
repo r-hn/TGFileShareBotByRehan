@@ -69,7 +69,6 @@ python FileShareMongoDB.py
 📂 Browse  
 🔍 Search  
 ℹ️ Info 
-![FileShareButtonPrev](https://github.com/user-attachments/assets/2f243b4b-6cab-471e-87f1-29615bd4fcd1)
 
 
 ---
