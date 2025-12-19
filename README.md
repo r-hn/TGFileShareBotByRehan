@@ -16,7 +16,7 @@
 
 
 
-A **production-ready Telegram File Sharing Bot** with batch-based sharing, MongoDB backend, and automatic bot username detection.
+A **production-ready Telegram File Sharing Bot** with batch-based channel sharing, MongoDB backend.
 
 ---
 
