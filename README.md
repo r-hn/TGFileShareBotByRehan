@@ -10,8 +10,8 @@ A **production-ready Telegram File Sharing Bot** with batch-based sharing, Mongo
 
 ---
 
-## ✅ Auto Bot Username Detection
-No hardcoding required. The bot automatically retrieves its own username using Telegram API at startup.
+## ✅ Updated And Tested
+This bot was made for personal use and I also made it public so other fellow developers can gain benefit from this .
 
 ---
 
@@ -68,7 +68,9 @@ python FileShareMongoDB.py
 /start  
 📂 Browse  
 🔍 Search  
-ℹ️ Info  
+ℹ️ Info 
+![FileShareButtonPrev](https://github.com/user-attachments/assets/2f243b4b-6cab-471e-87f1-29615bd4fcd1)
+
 
 ---
 
