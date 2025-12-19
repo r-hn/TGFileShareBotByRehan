@@ -2,11 +2,17 @@
 # 🚀 Telegram FileShare Bot By Rehan
 
 <p align="center">
-  <img src="https://cdn.simpleicons.org/python/3776AB" width="42"/>
-  <img src="https://cdn.simpleicons.org/telegram/229ED9" width="42"/>
-  <img src="https://cdn.simpleicons.org/mongodb/47A248" width="42"/>
-  <span style="font-size:20px;">🚀 Production Ready</span>
+  <img src="https://cdn.simpleicons.org/python/3776AB" height="38"/>
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/telegram/229ED9" height="38"/>
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/mongodb/47A248" height="38"/>
 </p>
+<p align="center">
+  <strong>Status:</strong> 🟢 Production Ready
+</p>
+
+
 
 
 
@@ -15,7 +21,7 @@ A **production-ready Telegram File Sharing Bot** with batch-based sharing, Mongo
 ---
 
 ## ✅ Updated And Tested
-This bot was made for personal use but I made it public so other fellow developers can gain benefit from this .
+This bot was made for personal use but I made it public so other fellow developers can gain benefit from it .
 
 ---
 
