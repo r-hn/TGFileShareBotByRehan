@@ -1,10 +1,13 @@
 
 # 🚀 Telegram FileShare Bot By Rehan
 
-![Python](https://cdn.simpleicons.org/python/3776AB)
-![Telegram](https://cdn.simpleicons.org/telegram/229ED9)
-![MongoDB](https://cdn.simpleicons.org/mongodb/47A248)
-![Status](https://img.shields.io/badge/Status-Production%20Ready-success)
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python/3776AB" width="42"/>
+  <img src="https://cdn.simpleicons.org/telegram/229ED9" width="42"/>
+  <img src="https://cdn.simpleicons.org/mongodb/47A248" width="42"/>
+  <span style="font-size:20px;">🚀 Production Ready</span>
+</p>
+
 
 
 A **production-ready Telegram File Sharing Bot** with batch-based sharing, MongoDB backend, and automatic bot username detection.
