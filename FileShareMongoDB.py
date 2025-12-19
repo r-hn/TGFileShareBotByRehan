@@ -55,9 +55,12 @@ async def check_fsub(user_id: int, context: ContextTypes.DEFAULT_TYPE) -> bool:
     return True
 
 
+BOT_USERNAME = None
+
 def generate_batch_link(batch_id: str) -> str:
-    bot_username = "YourBotUsername"  # 🔴 CHANGE THIS to your bot username (without @)
-    return f"https://t.me/{bot_username}?start=batch_{batch_id}"
+    if not BOT_USERNAME:
+        raise RuntimeError("Bot username not initialized")
+    return f"https://t.me/{BOT_USERNAME}?start=batch_{batch_id}"
 
 
 def get_main_keyboard():
@@ -888,8 +891,15 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await info(update, context)
 
 
+async def set_bot_username(app):
+    global BOT_USERNAME
+    me = await app.bot.get_me()
+    BOT_USERNAME = me.username
+    print(f"🤖 Bot username detected: @{BOT_USERNAME}")
+
 def main():
     app = Application.builder().token(BOT_TOKEN).build()
+    app.post_init = set_bot_username
     
     # Admin handlers
     app.add_handler(CommandHandler("addfsub", add_fsub))

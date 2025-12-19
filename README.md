@@ -1,39 +1,35 @@
 
 # 🚀 Telegram FileShare Bot By Rehan
 
-A powerful **Telegram File Sharing Bot** using Python + MongoDB that allows admins to create **batch-based share links** and distribute files securely via Telegram.
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
+![Telegram](https://img.shields.io/badge/Telegram-Bot-blue)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-green)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-success)
+
+A **production-ready Telegram File Sharing Bot** with batch-based sharing, MongoDB backend, and automatic bot username detection.
 
 ---
 
-## ⚠️ IMPORTANT CONFIG (READ THIS)
-
-Inside `FileShareMongoDB.py`, you **MUST** change:
-
-```python
-bot_username = "YourBotUsername"
-```
-
-➡ Replace it with your actual bot username (without `@`)  
-This is required to generate **correct shareable batch links**.
+## ✅ Auto Bot Username Detection
+No hardcoding required. The bot automatically retrieves its own username using Telegram API at startup.
 
 ---
 
 ## ✨ Features
 - Batch-based file sharing
-- Auto-generated Telegram links
+- Auto-generated share links
 - MongoDB powered
-- Force Subscribe (FSUB)
-- Admin & Owner system
+- Force Subscribe protection
+- Admin & Owner roles
 - Browse & Search
-- Broadcast messages
-- Dashboard & statistics
+- Broadcast & Dashboard
 
 ---
 
-## 📦 Installation
+## 📦 Install
 
 ```bash
-pip install python-telegram-bot pymongo dnspython
+pip install -r requirements.txt
 ```
 
 ---
@@ -42,14 +38,14 @@ pip install python-telegram-bot pymongo dnspython
 
 ```env
 BOT_TOKEN=YOUR_BOT_TOKEN
-OWNER_ID=YOUR_TELEGRAM_USER_ID
+OWNER_ID=YOUR_TELEGRAM_ID
 MONGO_URI=YOUR_MONGODB_URI
 STORAGE_CHANNEL_ID=PRIVATE_CHANNEL_ID
 ```
 
 ---
 
-## ▶️ Run the Bot
+## ▶️ Run
 
 ```bash
 python FileShareMongoDB.py
@@ -58,22 +54,10 @@ python FileShareMongoDB.py
 ---
 
 ## 👮 Admin Commands
-
-### Batch
-/gen → Create new file batch  
-/list → List batches  
-
-### Force Subscribe
-/addfsub <channel_id>  
-/removefsub <channel_id>  
-/listfsub  
-
-### Admin Control
-/addadmin <user_id>  
-/removeadmin <user_id>  
-/listadmin  
-
-### Management
+/gen  
+/list  
+/addadmin  
+/addfsub  
 /dashboard  
 /broadcast  
 /cmd  
@@ -85,13 +69,6 @@ python FileShareMongoDB.py
 📂 Browse  
 🔍 Search  
 ℹ️ Info  
-
----
-
-## 🔐 Security
-- Files stored only on Telegram
-- MongoDB stores metadata only
-- Force Subscribe prevents leeching
 
 ---
 
